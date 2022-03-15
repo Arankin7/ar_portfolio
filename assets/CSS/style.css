@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #036877;
+    --secondary-color: #b10000 ;
+
+    --accent-color: #0056d3 ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Styling for the header */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--accent-color);
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/28500029.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);    
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    
+}
+
+/* About me Styling */
+.about {
+    color: var(--secondary-color);
+    text-align: center;
+    background-image: url("../images/28500029.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+
+
+/* My Work Styling */
+
+.main-project {
+    display: flex;
+    margin: 15px 15px;      
+}
+
+.main-project img {
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    border: 3px outset var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../arportfolio/assets/CSS/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Anthony Rankin</h1>
+        <h1><a href ="/">Anthony Rankin</a></h1>
         <nav>
             <ul>
                 <!-- Navigation bar -->
@@ -26,8 +27,8 @@
     </header>
 
     <!-- About me section -->
-    <section>
-        <h2>
+    <section class="about">
+        <h2 id="about-me">
             About Me:
         </h2>
         <article>
@@ -40,22 +41,28 @@
 
     <!-- My Work Section -->
     <section>
-        <h2>
-            My Work
+        <h2 id="my-work">
+            My Work:
         </h2>
         
         <!-- Run Buddy section -->
-        <article>
-            <h3>
-                Run Buddy
-            </h3>
+        <article class="main-project">
+            <div>
+                <a href="https://arankin7.github.io/run-buddy/">
+                <img src="./assets/images/runbuddyimg.png"/>
+                </a>
+            </div>
+>
         </article>
 
         <!-- Placeholder for 2nd app -->
 
         <article>
             <h3>
-                Placeholder for second app.
+                <a href="https://arankin7.github.io/robot-gladiators/">
+                    Robot Gladiators
+                </a>
+                <p>Still a Work in progress.</p>
             </h3>
         </article>
 
@@ -70,7 +77,7 @@
 
     <!-- Contact me Section -->
     <section>
-        <h2>
+        <h2 id="contact-me">
             Contact Me!
         </h2>
         <ul>
@@ -81,7 +88,7 @@
                 Email me!</a>
             </li>
             <li>
-                Social Media?
+                <a href="https://github.com/arankin7">My Github.</a> 
             </li>
         </ul>
     </section>
