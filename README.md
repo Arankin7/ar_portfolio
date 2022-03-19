@@ -11,6 +11,9 @@ Link to page: https://arankin7.github.io/arportfolio/
 * Html
 * CSS
 
+![arPortfolio](https://user-images.githubusercontent.com/30415670/159129190-825febce-1311-46cc-ae2d-753615e8b859.png)
+
+
 ### Disclaimer
 This portfolio will be a work in progress as I continue to learn and grow my career.  
 
