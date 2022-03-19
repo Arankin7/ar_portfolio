@@ -1,7 +1,8 @@
 :root {
-    --primary-color: #f3ff00 ; 
-    --secondary-color: #000000;
-    --accent-color: #ffae00 ;
+    --primary-color: #057cb3 ; 
+    --secondary-color: #0a4655;
+    --accent-color: #da6a02d5 ;
+    --link-color: #072cff;
 }
 
 * {
@@ -12,6 +13,7 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(115deg, var(--secondary-color), var(--primary-color) 60%, var(--accent-color));
 }
 
 /* Styling for the header */
@@ -25,20 +27,20 @@ header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-header h1 a {
+header h1 {
+    text-align: center;
     font-weight: bold; 
     font-size: 5vw;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
-    color: var(--secondary-color);
-    margin: 0;
-    padding: 5px 1em 5px 1em;
+    margin: 2vw 0 0;
+    padding: 0;
     flex: 2 1 80%;
     width: 100%;
 }
 
 header a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--link-color);
 }
 
 .nav-bar {
@@ -51,14 +53,14 @@ header a {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    font-weight: 300;
+    font-weight: 350;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     border-top: 2px solid black;
     border-bottom: 1px solid black;
 }
 
 .nav-bar li a:hover {
-    color: whitesmoke;
+    color: var(--secondary-color);
     background-color: rgba(0, 0, 0, .8);
     border-radius: 5px;
 }
@@ -70,7 +72,6 @@ header a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: var(--secondary-color);
     text-align: center;
     border-bottom: 2px solid black;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -96,8 +97,6 @@ header a {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* My Work Styling */
 .work-container {
     padding: 5px;
@@ -112,7 +111,6 @@ header a {
     font-size: 3vw;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
-    color: var(--secondary-color);
     margin: 0;
     padding: 2% 0;
     flex: 2 1 100%;
@@ -135,16 +133,24 @@ header a {
     padding: 10px;
 }
 
+.article-container a {
+    color: var(--link-color);
+}
+
+.article-container a:hover{
+    color: var(--secondary-color);  
+}
+
 .article-container p {
     margin: 0.4em;
     font-size: 2vw;
     font-weight: lighter;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 1% 25%;
+    padding: 1%;
 }
 
 .article-container img {
-    width: 50%;
+    width: 80%;
     border: 2px outset var(--secondary-color);
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
@@ -230,6 +236,56 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0px -2px 2px  rgba(0, 0, 0, 0.2); */
 }
 
+@media screen and (max-width: 560px ) {
+
+    .about-container h2, .work-container h2{
+        font-size: 5vw;
+    }
+
+    .about-container p {
+        font-size: 4vw;
+    }
+
+    .main-project {
+        padding: 0;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .main-project img {
+        width: 100%;
+    }
+
+    .article-container img {
+        opacity: 100%;
+        width: 85%;
+    }
+
+    .work-container h3 {
+        font-size: 3.5vw;
+    }
+
+    .work-container p {
+        font-size: 3vw;
+        font-weight: 400;
+    }
+
+    .contact-container h2 {
+        font-size: 3vw;
+        margin-left: 1%;
+        flex: 1 1 15%;
+    } 
+
+    .contact-container ul {
+        /* font-weight: bold; */
+        justify-content: space-evenly;
+        gap: 0vw;
+    }
+
+    .contact-container ul li {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+}
