@@ -92,8 +92,8 @@ header a {
 
 .about-container img {
     margin: 2em;
-    flex: 1 1 100%;
-    width: 10%;
+    flex: 1 1 25%;
+    width: 50%;
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: 2px 2px 3px rgba(255, 255, 255, .3);
