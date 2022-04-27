@@ -18,14 +18,6 @@ body {
 
 /* Styling for the header */
 
-header {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
 header h1 {
     text-align: center;
     font-weight: bold; 
@@ -44,16 +36,11 @@ header a {
 }
 
 .nav-bar {
-    font-size: 3vw;
+    text-align: center;
+    font-size: 1.5em;
     list-style: none;
     margin: 0.8rem 0;
     padding: 0.5em 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    font-weight: 350;
     border-top: 2px solid black;
     border-bottom: 1px solid black;
 }
@@ -67,8 +54,6 @@ header a {
 
 /* About me Styling */
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -101,7 +86,7 @@ header a {
 
 .about-container p {
     margin: 1rem;
-    font-size: 2.2vw;
+    font-size: 1.2em;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
 }
 
@@ -133,11 +118,8 @@ header a {
 }
 
 .article-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .article-container a {
@@ -152,9 +134,9 @@ header a {
 
 .article-container p {
     margin: 0.4em;
-    font-size: 2vw;
+    font-size: 1.1 em;
     font-weight: lighter;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
     padding: 1%;
 }
 
@@ -172,20 +154,16 @@ header a {
 
 .main-project {
     text-align: center;
-    flex: 2 1 50%;
 }
 
-.second {
-    display: flex;
+.main-project img {
+    width: 80%;
+}
+
+.secondary {
     justify-content: center;
-    align-items: flex-start;
     text-align: center;
 }
-
-.second article {
-    flex: 2 1 50%;
-}
-
 
 /* Contact styling */
 
